@@ -15,14 +15,42 @@ def hr_interview():
         print(f"\nQuestion {i + 1}:")
         print(questions[i])
 
-        answer = input("Your Answer: ")
-        answers.append(answer)
+        while True:
+            answer = input("Your Answer: ").strip()
+
+            if answer == "":
+                print("❌ Answer cannot be empty. Please try again.\n")
+            else:
+                answers.append(answer)
+                break
 
     print("\n" + "=" * 50)
     print("          HR INTERVIEW REPORT")
     print("=" * 50)
 
     print(f"\nQuestions Answered: {len(answers)}")
+
+    score = 0
+
+    for answer in answers:
+        if len(answer) >= 10:
+            score += 3
+        else:
+            score += 1
+
+    if score > 10:
+        score = 10
+
+    print(f"\nInterview Score: {score}/10")
+
+    print("\nFeedback:")
+
+    if score >= 8:
+        print("🌟 Excellent! Your answers were detailed and impressive.")
+    elif score >= 5:
+        print("👍 Good effort! Try giving more detailed answers.")
+    else:
+        print("📚 Needs improvement. Consider elaborating on your answers.")
 
     print("\nYour Answers:")
 
