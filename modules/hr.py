@@ -1,13 +1,15 @@
+import random
+
+
 def hr_interview():
     print("\n" + "=" * 50)
     print("              HR INTERVIEW")
     print("=" * 50)
 
-    questions = [
-        "Tell me about yourself?",
-        "Why should we hire you?",
-        "What are your strengths?"
-    ]
+    with open("data/hr_questions.txt", "r") as file:
+        questions = file.read().splitlines()
+        TOTAL_QUESTIONS = 4
+        questions = random.sample(questions, TOTAL_QUESTIONS)
 
     answers = []
 
@@ -58,3 +60,4 @@ def hr_interview():
         print(f"{i + 1}. {answers[i]}")
 
     print("\n🎉 Interview Completed!")
+    input("\nPress Enter to return to the Main Menu...")
