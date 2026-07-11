@@ -34,7 +34,7 @@ while True:
     choice = input("\nEnter your choice: ")
 
     if choice == "1":
-        modules.hr.hr_interview()
+        modules.hr.hr_interview(name)
 
     elif choice == "0":
         print("\nThank you for using AI Interview Assistant.")

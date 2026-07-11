@@ -1,7 +1,8 @@
+from modules.history import save_history
 import random
 
 
-def hr_interview():
+def hr_interview(name):
     print("\n" + "=" * 50)
     print("              HR INTERVIEW")
     print("=" * 50)
@@ -60,4 +61,5 @@ def hr_interview():
         print(f"{i + 1}. {answers[i]}")
 
     print("\n🎉 Interview Completed!")
+    save_history(name, score, len(answers))
     input("\nPress Enter to return to the Main Menu...")
