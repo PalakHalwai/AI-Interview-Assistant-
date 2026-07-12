@@ -1,42 +1,8 @@
 [
     {
         "name": "Palak",
+        "interview_type": "HR",
         "score": 10,
-        "questions_answered": 4
-    },
-    {
-        "name": "Palak",
-        "score": 10,
-        "questions_answered": 4
-    },
-    {
-        "name": "palak",
-        "score": 10,
-        "questions_answered": 4
-    },
-    {
-        "name": "palak",
-        "score": 10,
-        "questions_answered": 4
-    },
-    {
-        "name": "Palak",
-        "score": 10,
-        "questions_answered": 4
-    },
-    {
-        "name": "Palak",
-        "score": 10,
-        "questions_answered": 4
-    },
-    {
-        "name": "Palak",
-        "score": 4,
-        "questions_answered": 4
-    },
-    {
-        "name": "Palak",
-        "score": 4,
         "questions_answered": 4
     }
 ]

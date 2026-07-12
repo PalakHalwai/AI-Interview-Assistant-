@@ -61,5 +61,6 @@ def interview(name, filename, interview_title):
         print(f"{i + 1}. {answers[i]}")
 
     print("\n🎉 Interview Completed!")
-    save_history(name, score, len(answers))
+    interview_type = interview_title.replace(" INTERVIEW", "")
+    save_history(name, interview_type, score, len(answers))
     input("\nPress Enter to return to the Main Menu...")
