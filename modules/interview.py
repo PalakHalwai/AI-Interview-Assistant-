@@ -2,16 +2,39 @@ from modules.history import save_history
 import random
 
 
+def load_questions(filename):
+
+    with open(filename, "r", encoding="utf-8") as file:
+        questions = file.read().splitlines()
+
+    TOTAL_QUESTIONS = 4
+    questions = random.sample(questions, TOTAL_QUESTIONS)
+
+    return questions
+
+
+def calculate_score(answers):
+
+    score = 0
+
+    for answer in answers:
+        if len(answer) >= 10:
+            score += 3
+        else:
+            score += 1
+
+    if score > 10:
+        score = 10
+
+    return score
+
+
 def interview(name, filename, interview_title):
     print("\n" + "=" * 50)
     print(f"          {interview_title}")
     print("=" * 50)
 
-    with open(filename, "r", encoding="utf-8") as file:
-        questions = file.read().splitlines()
-        TOTAL_QUESTIONS = 4
-        questions = random.sample(questions, TOTAL_QUESTIONS)
-
+    questions = load_questions(filename)
     answers = []
 
     for i in range(len(questions)):
@@ -33,16 +56,7 @@ def interview(name, filename, interview_title):
 
     print(f"\nQuestions Answered: {len(answers)}")
 
-    score = 0
-
-    for answer in answers:
-        if len(answer) >= 10:
-            score += 3
-        else:
-            score += 1
-
-    if score > 10:
-        score = 10
+    score = calculate_score(answers)
 
     print(f"\nInterview Score: {score}/10")
 
