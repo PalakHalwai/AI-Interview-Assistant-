@@ -8,4 +8,3 @@ What are modules in python?
 What is recursion?
 What is the difference between == and is?
 Explain exception handling in python?
-    

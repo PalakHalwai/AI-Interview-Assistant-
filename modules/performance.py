@@ -26,6 +26,8 @@ def show_history():
         print(f"\nInterview {number}")
         print(f"Candidate: {interview['name']}")
         print(f"Interview Type: {interview.get('interview_type', 'Unknown')}")
+        print(f"Date: {interview.get('date', 'Unknown')}")
+        print(f"Time: {interview.get('time', 'Unknown')}")
         print(f"Score: {interview['score']}/10")
         print(f"Questions Answered: {interview['questions_answered']}")
         print("-" * 50)
