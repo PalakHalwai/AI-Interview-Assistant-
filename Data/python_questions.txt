@@ -1,0 +1,11 @@
+What is python?
+What is the difference between a list and a tuple?
+What is a dictionary in python?
+What is a function?
+What is OOP?
+What is inheritance?
+What are modules in python?
+What is recursion?
+What is the difference between == and is?
+Explain exception handling in python?
+    

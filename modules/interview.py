@@ -2,12 +2,12 @@ from modules.history import save_history
 import random
 
 
-def hr_interview(name):
+def interview(name, filename, interview_title):
     print("\n" + "=" * 50)
-    print("              HR INTERVIEW")
+    print(f"          {interview_title}")
     print("=" * 50)
 
-    with open("data/hr_questions.txt", "r") as file:
+    with open(filename, "r", encoding="utf-8") as file:
         questions = file.read().splitlines()
         TOTAL_QUESTIONS = 4
         questions = random.sample(questions, TOTAL_QUESTIONS)
@@ -28,7 +28,7 @@ def hr_interview(name):
                 break
 
     print("\n" + "=" * 50)
-    print("          HR INTERVIEW REPORT")
+    print(f"          {interview_title} REPORT")
     print("=" * 50)
 
     print(f"\nQuestions Answered: {len(answers)}")

@@ -1,4 +1,4 @@
-import modules.hr
+import modules.interview
 import modules.performance
 
 
@@ -36,10 +36,15 @@ while True:
     choice = input("\nEnter your choice: ")
 
     if choice == "1":
-        modules.hr.hr_interview(name)
+        modules.interview.interview(name, "data/hr_questions.txt", "HR INTERVIEW")
 
     elif choice == "9":
         modules.performance.show_history()
+
+    elif choice == "2":
+        modules.interview.interview(
+            name, "data/python_questions.txt", "PYTHON INTERVIEW"
+        )
 
     elif choice == "0":
         print("\nThank you for using AI Interview Assistant.")
