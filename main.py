@@ -1,4 +1,6 @@
 import modules.hr
+import modules.performance
+
 
 def welcome():
     print("=" * 50)
@@ -24,7 +26,7 @@ def menu():
 
 welcome()
 
-name = input("Enter your name: ")
+name = input("Enter your name: ").strip().title()
 
 print(f"\nWelcome, {name}!")
 
@@ -35,6 +37,9 @@ while True:
 
     if choice == "1":
         modules.hr.hr_interview(name)
+
+    elif choice == "9":
+        modules.performance.show_history()
 
     elif choice == "0":
         print("\nThank you for using AI Interview Assistant.")
