@@ -29,6 +29,15 @@ def calculate_score(answers):
     return score
 
 
+def get_feedback(score):
+    if score >= 8:
+        return "🌟 Excellent! Your answers were detailed and impressive."
+    elif score >= 5:
+        return "👍 Good effort! Try giving more detailed answers."
+    else:
+        return "📚 Needs improvement. Consider elaborating on your answers."
+
+
 def interview(name, filename, interview_title):
     print("\n" + "=" * 50)
     print(f"          {interview_title}")
@@ -62,12 +71,8 @@ def interview(name, filename, interview_title):
 
     print("\nFeedback:")
 
-    if score >= 8:
-        print("🌟 Excellent! Your answers were detailed and impressive.")
-    elif score >= 5:
-        print("👍 Good effort! Try giving more detailed answers.")
-    else:
-        print("📚 Needs improvement. Consider elaborating on your answers.")
+    feedback = get_feedback(score)
+    print(feedback)
 
     print("\nYour Answers:")
 
