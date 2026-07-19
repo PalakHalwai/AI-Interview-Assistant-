@@ -38,5 +38,13 @@
         "questions_answered": 4,
         "date": "19-07-2026",
         "time": "01:52 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "HR",
+        "score": 8,
+        "questions_answered": 4,
+        "date": "19-07-2026",
+        "time": "02:06 PM"
     }
 ]

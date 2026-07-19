@@ -46,13 +46,12 @@ def interview(name, filename, interview_title):
     questions = load_questions(filename)
     answers = []
 
-    for i in range(len(questions)):
-        print(f"\nQuestion {i + 1}:")
-        print(questions[i])
+    for number, question in enumerate(questions, start=1):
+        print(f"\nQuestion {number}:")
+        print(question)
 
         while True:
             answer = input("Your Answer: ").strip()
-
             if answer == "":
                 print("❌ Answer cannot be empty. Please try again.\n")
             else:
@@ -76,8 +75,8 @@ def interview(name, filename, interview_title):
 
     print("\nYour Answers:")
 
-    for i in range(len(answers)):
-        print(f"{i + 1}. {answers[i]}")
+    for number, answer in enumerate(answers, start=1):
+        print(f"{number}. {answer}")
 
     print("\n🎉 Interview Completed!")
     interview_type = interview_title.replace(" INTERVIEW", "")
