@@ -1,10 +1,50 @@
-What is python?
-What is the difference between a list and a tuple?
-What is a dictionary in python?
+What is Python?
+What are the features of Python?
+Why is Python called an interpreted language?
+What is the difference between Python 2 and Python 3?
+What are variables in Python?
+What are Python data types?
+Difference between a list and a tuple?
+What is a dictionary?
+What is a set in Python?
+What are strings?
+How do you slice a string?
+What are Python operators?
+What is type casting?
 What is a function?
-What is OOP?
-What is inheritance?
-What are modules in python?
+What are lambda functions?
 What is recursion?
-What is the difference between == and is?
-Explain exception handling in python?
+What are *args and **kwargs?
+What is a module?
+What is a package?
+How do you import a module?
+What is OOP?
+What is a class?
+What is an object?
+What is inheritance?
+What is polymorphism?
+What is encapsulation?
+What is abstraction?
+What is method overriding?
+What is method overloading?
+What is the __init__() method?
+What are file handling modes?
+How do you read a file?
+How do you write to a file?
+What is exception handling?
+What is the purpose of try-except?
+What is finally used for?
+What is a custom exception?
+What are list comprehensions?
+What is the difference between append() and extend()?
+What is the difference between remove() and pop()?
+What are generators?
+What are iterators?
+What are decorators?
+What is PEP 8?
+What is virtual environment?
+What is pip?
+What is NumPy?
+What is Pandas?
+What is Matplotlib?
+Why is Python popular in Data Science?

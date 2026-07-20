@@ -1,10 +1,50 @@
 What is SQL?
+What are the different types of SQL commands?
+What is the difference between SQL and MySQL?
+What is a database?
+What is a table?
 What is a primary key?
 What is a foreign key?
-What is a JOIN?
-Difference between WHERE and HAVING?
-What is a database?
+What is a unique key?
+What is a composite key?
+What is a candidate key?
 What is normalization?
-What is a view?
+What are the different normal forms?
+What is denormalization?
+What is a JOIN?
+What is the difference between INNER JOIN and LEFT JOIN?
+What is the difference between LEFT JOIN and RIGHT JOIN?
+What is a FULL OUTER JOIN?
+What is a SELF JOIN?
+What is a CROSS JOIN?
 What is GROUP BY?
-Difference between DELETE, DROP and TRUNCATE?
+What is HAVING?
+What is ORDER BY?
+What is DISTINCT?
+What is the WHERE clause?
+What is the difference between WHERE and HAVING?
+What are aggregate functions?
+What is COUNT()?
+What is SUM()?
+What is AVG()?
+What is MAX() and MIN()?
+What is a subquery?
+What is a correlated subquery?
+What is a view?
+What is an index?
+Why are indexes used?
+What is a stored procedure?
+What is a trigger?
+What is a transaction?
+What are ACID properties?
+What is COMMIT?
+What is ROLLBACK?
+What is SAVEPOINT?
+What is the DELETE command?
+What is the TRUNCATE command?
+What is the DROP command?
+Difference between DELETE, TRUNCATE and DROP?
+What is UNION?
+What is UNION ALL?
+What are window functions?
+Explain the ROW_NUMBER() function.

@@ -1,10 +1,50 @@
 What is Java?
+What are the features of Java?
+What is the difference between Java and C++?
 What is JVM?
 What is JDK?
 What is JRE?
-Explain OOP in Java.
-What is inheritance in Java?
+What is bytecode?
+Why is Java platform independent?
+What is object-oriented programming?
+What is a class?
+What is an object?
+What is inheritance?
 What is polymorphism?
 What is encapsulation?
+What is abstraction?
+What is an interface?
+What is an abstract class?
+Difference between interface and abstract class?
 What is method overloading?
 What is method overriding?
+What is a constructor?
+What is a default constructor?
+Can constructors be overloaded?
+What is the this keyword?
+What is the super keyword?
+What is static keyword?
+What is final keyword?
+What is the difference between == and equals()?
+What is String?
+What is StringBuilder?
+Difference between String and StringBuilder?
+What is exception handling?
+What is try-catch?
+What is finally block?
+What is throw and throws?
+What is multithreading?
+What is thread synchronization?
+What is garbage collection?
+What is the Collection Framework?
+What is ArrayList?
+What is LinkedList?
+Difference between ArrayList and LinkedList?
+What is HashMap?
+Difference between HashMap and Hashtable?
+What is HashSet?
+What is an Iterator?
+What is serialization?
+What are packages in Java?
+What are access modifiers?
+Why is Java widely used in enterprise applications?

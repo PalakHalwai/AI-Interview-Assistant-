@@ -7,7 +7,7 @@ def load_questions(filename):
     with open(filename, "r", encoding="utf-8") as file:
         questions = file.read().splitlines()
 
-    TOTAL_QUESTIONS = 4
+    TOTAL_QUESTIONS = 6
     questions = random.sample(questions, TOTAL_QUESTIONS)
 
     return questions
@@ -37,6 +37,7 @@ def get_feedback(score):
     else:
         return "📚 Needs improvement. Consider elaborating on your answers."
 
+
 def show_report(interview_title, answers, score):
     print("\n" + "=" * 50)
     print(f"          {interview_title} REPORT")
@@ -55,6 +56,7 @@ def show_report(interview_title, answers, score):
         print(f"{number}. {answer}")
 
     print("\n🎉 Interview Completed!")
+
 
 def interview(name, filename, interview_title):
     print("\n" + "=" * 50)

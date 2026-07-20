@@ -1,10 +1,50 @@
 What is C++?
 What is the difference between C and C++?
+What are the features of C++?
+What is object-oriented programming?
 What is a class?
 What is an object?
-What is a constructor?
-What is a destructor?
-What is polymorphism?
 What is encapsulation?
 What is inheritance?
+What is polymorphism?
+What is abstraction?
+What is a constructor?
+What is a destructor?
+What is constructor overloading?
+What is function overloading?
+What is function overriding?
+What is a virtual function?
+What is a pure virtual function?
+What is an abstract class?
+What is a friend function?
+What is the this pointer?
 What is a pointer?
+What is a null pointer?
+What is a dangling pointer?
+What is a void pointer?
+What is dynamic memory allocation?
+What is the new operator?
+What is the delete operator?
+Difference between stack and heap memory?
+What is a reference variable?
+Difference between pointer and reference?
+What is pass by value?
+What is pass by reference?
+What is the Standard Template Library (STL)?
+What is a vector?
+What is a list in STL?
+What is a map?
+What is a set?
+What is an iterator?
+What is exception handling in C++?
+What is try-catch?
+What is namespace?
+What is recursion?
+What is inline function?
+What is a macro?
+Difference between struct and class?
+What is file handling in C++?
+What is multiple inheritance?
+What is operator overloading?
+What is copy constructor?
+Why is C++ widely used in system programming?

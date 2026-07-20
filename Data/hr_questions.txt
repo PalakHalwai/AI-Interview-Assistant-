@@ -1,11 +1,50 @@
-Tell me about yourself?
+Tell me about yourself.
+Walk me through your resume.
+Why do you want to work for our company?
 Why should we hire you?
-What are your strengths?
-What are your weaknesses?
-Where do you see yourself in 5 years?
-Why do you want to work with our company?
-Tell me about a challenge you faced?
-Describe your dream job?
-How do you handle pressure?
+What are your greatest strengths?
+What is your biggest weakness?
+Where do you see yourself in five years?
+Why are you leaving your current job?
+Describe yourself in three words.
+What motivates you to perform well?
+Tell me about a challenge you faced and how you handled it.
+Describe a time when you worked under pressure.
+Tell me about a mistake you made and what you learned.
+Describe a situation where you had to solve a difficult problem.
+Tell me about a time you failed.
+Describe a conflict you had with a teammate.
+How do you handle criticism?
+Tell me about a time you showed leadership.
+Describe a time you had to meet a tight deadline.
+Tell me about a time you helped someone on your team.
+How do you prioritize your work?
+How do you handle multiple tasks at once?
+What would you do if your manager disagreed with your idea?
+How do you deal with difficult coworkers?
+Describe your ideal work environment.
+Are you comfortable working in a team?
+Do you prefer working independently or in a team?
+What does success mean to you?
+How do you handle stress?
+How do you stay organized?
 Why should we choose you over other candidates?
-
+What are your salary expectations?
+Are you willing to relocate?
+Are you willing to work overtime if required?
+How quickly can you learn new technologies?
+How do you keep your skills updated?
+Tell me about a project you are proud of.
+Describe a situation where you had to adapt to change.
+What are your hobbies and interests?
+What kind of manager do you like working with?
+How do you handle failure?
+What achievement are you most proud of?
+Describe a time when you took initiative.
+Tell me about a difficult decision you had to make.
+How would your friends describe you?
+How would your previous teacher or manager describe you?
+If you could improve one thing about yourself, what would it be?
+Do you have any questions for us?
+What are your career goals?
+Why should we not hire you?
