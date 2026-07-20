@@ -1,0 +1,10 @@
+What is Java?
+What is JVM?
+What is JDK?
+What is JRE?
+Explain OOP in Java.
+What is inheritance in Java?
+What is polymorphism?
+What is encapsulation?
+What is method overloading?
+What is method overriding?

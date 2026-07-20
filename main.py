@@ -47,6 +47,11 @@ while True:
         modules.interview.interview(
             name, "data/python_questions.txt", "PYTHON INTERVIEW"
         )
+
+    elif choice == "4":
+        modules.interview.interview(
+            name, "data/java_questions.txt", "JAVA INTERVIEW"
+        )
     elif choice == "5":
         modules.interview.interview(name, "data/sql_questions.txt", "SQL INTERVIEW")
 
