@@ -1,0 +1,10 @@
+What is C++?
+What is the difference between C and C++?
+What is a class?
+What is an object?
+What is a constructor?
+What is a destructor?
+What is polymorphism?
+What is encapsulation?
+What is inheritance?
+What is a pointer?

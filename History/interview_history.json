@@ -62,5 +62,21 @@
         "questions_answered": 4,
         "date": "20-07-2026",
         "time": "08:39 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "C/C++",
+        "score": 6,
+        "questions_answered": 4,
+        "date": "20-07-2026",
+        "time": "08:45 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "APTITUDE TEST",
+        "score": 4,
+        "questions_answered": 4,
+        "date": "20-07-2026",
+        "time": "08:49 PM"
     }
 ]
