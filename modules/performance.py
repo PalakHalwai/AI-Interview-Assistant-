@@ -20,6 +20,8 @@ def show_history():
 
     total_score = 0
     highest_score = 0
+    lowest_score = 10
+    interview_counts = {}
 
     for number, interview in enumerate(history, start=1):
 
@@ -36,11 +38,26 @@ def show_history():
 
         if interview["score"] > highest_score:
             highest_score = interview["score"]
+        if interview["score"] < lowest_score:
+            lowest_score = interview["score"]
+
+        interview_type = interview.get("interview_type", "Unknown")
+
+        if interview_type in interview_counts:
+            interview_counts[interview_type] += 1
+        else:
+            interview_counts[interview_type] = 1
 
     average = total_score / len(history)
 
     print(f"\nTotal Interviews : {len(history)}")
     print(f"Average Score    : {average:.1f}/10")
     print(f"Highest Score    : {highest_score}/10")
+    print(f"Lowest Score     : {lowest_score}/10")
+
+    print("\nInterview Types:")
+
+    for interview_type, count in interview_counts.items():
+        print(f"{interview_type:<10}: {count}")
 
     input("\nPress Enter to return...")
