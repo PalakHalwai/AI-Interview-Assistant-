@@ -37,6 +37,24 @@ def get_feedback(score):
     else:
         return "📚 Needs improvement. Consider elaborating on your answers."
 
+def show_report(interview_title, answers, score):
+    print("\n" + "=" * 50)
+    print(f"          {interview_title} REPORT")
+    print("=" * 50)
+
+    print(f"\nQuestions Answered: {len(answers)}")
+    print(f"\nInterview Score: {score}/10")
+
+    print("\nFeedback:")
+    feedback = get_feedback(score)
+    print(feedback)
+
+    print("\nYour Answers:")
+
+    for number, answer in enumerate(answers, start=1):
+        print(f"{number}. {answer}")
+
+    print("\n🎉 Interview Completed!")
 
 def interview(name, filename, interview_title):
     print("\n" + "=" * 50)
@@ -57,28 +75,9 @@ def interview(name, filename, interview_title):
             else:
                 answers.append(answer)
                 break
-
-    print("\n" + "=" * 50)
-    print(f"          {interview_title} REPORT")
-    print("=" * 50)
-
-    print(f"\nQuestions Answered: {len(answers)}")
-
     score = calculate_score(answers)
+    show_report(interview_title, answers, score)
 
-    print(f"\nInterview Score: {score}/10")
-
-    print("\nFeedback:")
-
-    feedback = get_feedback(score)
-    print(feedback)
-
-    print("\nYour Answers:")
-
-    for number, answer in enumerate(answers, start=1):
-        print(f"{number}. {answer}")
-
-    print("\n🎉 Interview Completed!")
     interview_type = interview_title.replace(" INTERVIEW", "")
     save_history(name, interview_type, score, len(answers))
     input("\nPress Enter to return to the Main Menu...")
