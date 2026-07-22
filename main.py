@@ -1,6 +1,7 @@
 import modules.interview
+import modules.aptitude
 import modules.performance
-
+import modules.resume
 
 def welcome():
     print("=" * 50)
@@ -55,9 +56,10 @@ while True:
         modules.interview.interview(name, "data/sql_questions.txt", "SQL INTERVIEW")
 
     elif choice == "6":
-        modules.interview.interview(
-            name, "data/aptitude_questions.txt", "APTITUDE TEST"
-        )
+         modules.aptitude.aptitude_test(name)
+
+    elif choice == "7":
+         modules.resume.analyze_resume()
 
     elif choice == "0":
         print("\nThank you for using AI Interview Assistant.")

@@ -102,5 +102,21 @@
         "questions_answered": 6,
         "date": "20-07-2026",
         "time": "10:41 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "HR",
+        "score": 10,
+        "questions_answered": 6,
+        "date": "22-07-2026",
+        "time": "09:32 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "APTITUDE",
+        "score": 1,
+        "questions_answered": 4,
+        "date": "22-07-2026",
+        "time": "09:32 PM"
     }
 ]
