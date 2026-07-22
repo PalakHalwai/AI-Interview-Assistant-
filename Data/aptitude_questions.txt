@@ -1,10 +1,50 @@
-What is 25 + 17?
-If a train travels 60 km in 1 hour, how far will it travel in 3 hours?
-What is the square root of 144?
-Find the next number: 2, 4, 8, 16, ?
-What is 15% of 200?
-If a pen costs ₹20, how much do 5 pens cost?
-What is 9 × 8?
-Simplify: 50 ÷ 5 + 7
-How many sides does a hexagon have?
-What is 1000 − 275?
+What is 25 + 17?|42
+What is 48 - 19?|29
+What is 12 × 8?|96
+What is 144 ÷ 12?|12
+What is 15% of 200?|30
+What is the square root of 169?|13
+What is the cube of 4?|64
+What is 9 × 11?|99
+What is 125 ÷ 5?|25
+What is 18 + 27?|45
+What is 56 - 18?|38
+What is 7 × 9?|63
+What is 81 ÷ 9?|9
+What is 20% of 150?|30
+What is the square root of 225?|15
+What is 14 × 6?|84
+What is 100 - 37?|63
+What is 13 + 29?|42
+What is 11 × 11?|121
+What is 72 ÷ 8?|9
+A train travels 60 km in 1 hour. How far will it travel in 4 hours?|240
+A car travels 80 km in 2 hours. What is its speed in km/h?|40
+If a pen costs ₹25, how much do 8 pens cost?|200
+If 5 workers finish a job in 10 days, how many worker-days are required?|50
+How many sides does a hexagon have?|6
+How many months are there in 3 years?|36
+What is half of 500?|250
+What is double of 45?|90
+What is 30% of 300?|90
+What is the next number: 2, 4, 8, 16, ?|32
+What is the next number: 5, 10, 15, 20, ?|25
+What is the next number: 3, 6, 9, 12, ?|15
+How many minutes are there in 2 hours?|120
+How many seconds are there in 3 minutes?|180
+How many centimeters are there in 2 meters?|200
+What is 250 + 350?|600
+What is 900 - 475?|425
+What is 13 × 12?|156
+What is 196 ÷ 14?|14
+What is 40% of 500?|200
+If today is Monday, what day comes after 10 days?|Thursday
+How many vowels are there in the English alphabet?|5
+What is the smallest prime number?|2
+What is the largest two-digit number?|99
+How many degrees are in a right angle?|90
+What is the perimeter of a square with side 8?|32
+What is the area of a square with side 9?|81
+How many hours are there in a week?|168
+How many days are there in a leap year?|366
+How many letters are there in the English alphabet?|26
