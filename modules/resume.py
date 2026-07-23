@@ -10,20 +10,24 @@ def calculate_score(content):
 
     score = 0
 
-    if "Education" in content:
-        score += 20
+    checks = [
+        "Education",
+        "Skills",
+        "Projects",
+        "Experience",
+        "Certifications",
+        "@",  # Email
+        "+91",  # Phone (basic check)
+        "LinkedIn",
+        "GitHub",
+    ]
 
-    if "Skills" in content:
-        score += 20
+    for item in checks:
+        if item.lower() in content.lower():
+            score += 10
 
-    if "Projects" in content:
-        score += 20
-
-    if "Experience" in content:
-        score += 20
-
-    if "Certifications" in content:
-        score += 20
+    if score > 100:
+        score = 100
 
     return score
 
@@ -32,20 +36,32 @@ def get_suggestions(content):
 
     suggestions = []
 
-    if "Education" not in content:
+    if "Education".lower() not in content.lower():
         suggestions.append("Add an Education section.")
 
-    if "Skills" not in content:
-        suggestions.append("Add a Skills section.")
+    if "Skills".lower() not in content.lower():
+        suggestions.append("Include your technical and soft skills.")
 
-    if "Projects" not in content:
-        suggestions.append("Mention your projects.")
+    if "Projects".lower() not in content.lower():
+        suggestions.append("Mention at least one project.")
 
-    if "Experience" not in content:
-        suggestions.append("Include work or internship experience if available.")
+    if "Experience".lower() not in content.lower():
+        suggestions.append("Include work experience or internships.")
 
-    if "Certifications" not in content:
-        suggestions.append("Add your certifications.")
+    if "Certifications".lower() not in content.lower():
+        suggestions.append("Mention your certifications.")
+
+    if "@" not in content:
+        suggestions.append("Add your email address.")
+
+    if "+91" not in content:
+        suggestions.append("Add your phone number.")
+
+    if "linkedin.com" not in content.lower():
+        suggestions.append("Add your LinkedIn profile.")
+
+    if "github.com" not in content.lower():
+        suggestions.append("Add your GitHub profile (recommended for technical roles).")
 
     return suggestions
 
@@ -57,6 +73,13 @@ def analyze_resume():
     filename = "resumes/" + filename
 
     content = read_resume(filename)
+
+    print("\n----- RESUME CONTENT -----")
+    print(content)
+    print("--------------------------")
+
+    score = calculate_score(content)
+    suggestions = get_suggestions(content)
 
     score = calculate_score(content)
 

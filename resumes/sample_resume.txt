@@ -1,19 +1,25 @@
 Palak Halwai
 
+Email
+palak@email.com
+
+Phone
++91 9876543210
+
+
+
 Education
 BSc Data Science
 
 Skills
 Python
-SQL
 Java
-Machine Learning
+SQL
 
 Projects
 AI Interview Assistant
 Fog Handwash Machine
 
+Experience
+None
 
-
-Certifications
-MS-CIT
