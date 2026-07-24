@@ -2,6 +2,7 @@ import modules.interview
 import modules.aptitude
 import modules.performance
 import modules.resume
+import modules.mock_interview
 
 def welcome():
     print("=" * 50)
@@ -60,6 +61,9 @@ while True:
 
     elif choice == "7":
          modules.resume.analyze_resume()
+
+    elif choice == "8":
+         modules.mock_interview.start_mock_interview(name)
 
     elif choice == "0":
         print("\nThank you for using AI Interview Assistant.")

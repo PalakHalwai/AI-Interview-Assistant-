@@ -1,3 +1,12 @@
+CHECKS = [
+    ("Education", "Add an Education section."),
+    ("Skills", "Include your technical and soft skills."),
+    ("Projects", "Mention at least one project."),
+    ("Experience", "Include work experience or internships."),
+    ("Certifications", "Mention your certifications."),
+]
+
+
 def read_resume(filename):
 
     with open(filename, "r", encoding="utf-8") as file:
@@ -10,46 +19,20 @@ def calculate_score(content):
 
     score = 0
 
-    checks = [
-        "Education",
-        "Skills",
-        "Projects",
-        "Experience",
-        "Certifications",
-        "@",  # Email
-        "+91",  # Phone (basic check)
-        "LinkedIn",
-        "GitHub",
-    ]
+    for keyword, suggestion in CHECKS:
+        if keyword.lower() in content.lower():
+            score += 20
 
-    for item in checks:
-        if item.lower() in content.lower():
-            score += 10
-
-    if score > 100:
-        score = 100
-
-    return score
+    return min(score, 100)
 
 
 def get_suggestions(content):
 
     suggestions = []
 
-    if "Education".lower() not in content.lower():
-        suggestions.append("Add an Education section.")
-
-    if "Skills".lower() not in content.lower():
-        suggestions.append("Include your technical and soft skills.")
-
-    if "Projects".lower() not in content.lower():
-        suggestions.append("Mention at least one project.")
-
-    if "Experience".lower() not in content.lower():
-        suggestions.append("Include work experience or internships.")
-
-    if "Certifications".lower() not in content.lower():
-        suggestions.append("Mention your certifications.")
+    for keyword, suggestion in CHECKS:
+        if keyword.lower() not in content.lower():
+            suggestions.append(suggestion)
 
     if "@" not in content:
         suggestions.append("Add your email address.")
@@ -74,9 +57,7 @@ def analyze_resume():
 
     content = read_resume(filename)
 
-    print("\n----- RESUME CONTENT -----")
-    print(content)
-    print("--------------------------")
+    
 
     score = calculate_score(content)
     suggestions = get_suggestions(content)

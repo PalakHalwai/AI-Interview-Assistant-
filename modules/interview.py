@@ -2,15 +2,31 @@ from modules.history import save_history
 import random
 
 
-def load_questions(filename):
 
-    with open(filename, "r", encoding="utf-8") as file:
-        questions = file.read().splitlines()
 
-    TOTAL_QUESTIONS = 6
-    questions = random.sample(questions, TOTAL_QUESTIONS)
 
-    return questions
+def load_questions(files, questions_per_file=None):
+
+    if isinstance(files, str):
+        files = [files]
+
+    all_questions = []
+
+    for filename in files:
+
+        with open(filename, "r", encoding="utf-8") as file:
+            questions = file.read().splitlines()
+
+        if questions_per_file is None:
+            all_questions.extend(questions)
+        else:
+            all_questions.extend(
+                random.sample(questions, min(questions_per_file, len(questions)))
+            )
+
+    random.shuffle(all_questions)
+
+    return all_questions
 
 
 def calculate_score(answers):
@@ -58,19 +74,28 @@ def show_report(interview_title, answers, score):
     print("\n🎉 Interview Completed!")
 
 
-def interview(name, filename, interview_title):
+def interview(name, filename, interview_title, questions_per_file=None):
     print("\n" + "=" * 50)
     print(f"          {interview_title}")
     print("=" * 50)
 
-    questions = load_questions(filename)
+    questions = load_questions(filename, questions_per_file)
+
+    if questions_per_file is None:
+        questions = random.sample(questions, min(6, len(questions)))
     answers = []
 
     for number, question in enumerate(questions, start=1):
-        print(f"\nQuestion {number}:")
-        print(question)
 
-        while True:
+    # If the question contains an answer (like aptitude questions),
+    # display only the question part.
+     if "|" in question:
+        question = question.split("|")[0]
+
+    print(f"\nQuestion {number}:")
+    print(question)
+
+    while True:
             answer = input("Your Answer: ").strip()
             if answer == "":
                 print("❌ Answer cannot be empty. Please try again.\n")

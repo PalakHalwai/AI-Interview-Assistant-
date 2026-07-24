@@ -118,5 +118,117 @@
         "questions_answered": 4,
         "date": "22-07-2026",
         "time": "09:32 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "MOCK",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "23-07-2026",
+        "time": "09:19 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "MOCK",
+        "score": 8,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "07:17 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "MOCK",
+        "score": 8,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "07:24 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "HR",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "08:54 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "PYTHON",
+        "score": 8,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "08:54 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "C/C++",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "08:55 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "JAVA",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "08:55 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "SQL",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "08:55 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "HR MOCK",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "08:55 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "HR",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "09:14 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "PYTHON",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "09:14 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "HR MOCK",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "09:14 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "TECHNICAL MOCK",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "09:14 PM"
+    },
+    {
+        "name": "Palak",
+        "interview_type": "MIXED MOCK",
+        "score": 6,
+        "questions_answered": 6,
+        "date": "24-07-2026",
+        "time": "09:15 PM"
     }
 ]

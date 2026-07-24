@@ -1,0 +1,6 @@
+Tell me about yourself.
+What is the difference between a list and a tuple?
+What is a JOIN in SQL?
+Describe a challenging situation and how you handled it.
+What is the output of 5 + 2 * 3?
+What is the difference between JDK, JRE and JVM?
