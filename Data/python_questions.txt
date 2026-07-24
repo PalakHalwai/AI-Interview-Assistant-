@@ -1,50 +1,60 @@
-What is Python?
-What are the features of Python?
 Why is Python called an interpreted language?
-What is the difference between Python 2 and Python 3?
-What are variables in Python?
+What are the key features of Python?
+What are mutable and immutable data types? Give examples.
+What is the difference between a list and a tuple?
+What is the difference between a set and a dictionary?
+Explain the difference between == and is.
 What are Python data types?
-Difference between a list and a tuple?
-What is a dictionary?
-What is a set in Python?
-What are strings?
-How do you slice a string?
-What are Python operators?
-What is type casting?
-What is a function?
-What are lambda functions?
-What is recursion?
+What is type casting? Explain implicit and explicit type conversion.
+What is the difference between local and global variables?
+What is a function? Why are functions useful?
 What are *args and **kwargs?
-What is a module?
-What is a package?
-How do you import a module?
-What is OOP?
-What is a class?
-What is an object?
-What is inheritance?
-What is polymorphism?
+What is recursion? Where is it useful?
+What are lambda functions? Give an example.
+What is the difference between map(), filter(), and reduce()?
+What are default arguments and keyword arguments?
+What is variable scope in Python?
+What is a module? How do you import one?
+What is a package in Python? How is it different from a module?
+What is the purpose of the __name__ == "__main__" statement?
+What is PEP 8? Why is it important?
+What is Object-Oriented Programming (OOP)?
+What is a class and an object?
+What is the purpose of the __init__() method?
+What is inheritance? Explain with an example.
+What is polymorphism in Python?
 What is encapsulation?
 What is abstraction?
 What is method overriding?
-What is method overloading?
-What is the __init__() method?
-What are file handling modes?
-How do you read a file?
-How do you write to a file?
+Does Python support method overloading? Explain.
+What is multiple inheritance?
+What is the difference between instance variables and class variables?
+What are static methods and class methods?
 What is exception handling?
-What is the purpose of try-except?
-What is finally used for?
-What is a custom exception?
-What are list comprehensions?
+Explain try, except, else, and finally.
+How do you raise a custom exception?
+What is the difference between open() and with open()?
+Explain different file modes (r, w, a, x).
+How do you read and write a text file in Python?
+How do you work with JSON files in Python?
+What is the difference between read(), readline(), and readlines()?
+What are iterators and iterables?
+What are generators? How are they different from normal functions?
+What are decorators? Why are they used?
+Explain list comprehensions with an example.
+What is the difference between deep copy and shallow copy?
+What is the Global Interpreter Lock (GIL)?
+What is Method Resolution Order (MRO)?
+What are context managers? Why is the with statement preferred?
+What is the difference between multithreading and multiprocessing?
+What is a virtual environment? Why is it important?
+How does Python manage memory?
+What is garbage collection in Python?
+What are Python comprehensions? (List, Dictionary and Set)
 What is the difference between append() and extend()?
-What is the difference between remove() and pop()?
-What are generators?
-What are iterators?
-What are decorators?
-What is PEP 8?
-What is virtual environment?
-What is pip?
-What is NumPy?
-What is Pandas?
-What is Matplotlib?
-Why is Python popular in Data Science?
+What is the difference between sort() and sorted()?
+What is pickling and unpickling in Python?
+How do you install external Python packages?
+What are f-strings? Why are they preferred?
+What are Python's built-in data structures?
+What are some best practices for writing clean Python code?

@@ -1,50 +1,60 @@
+What is DBMS?
+What is the difference between DBMS and RDBMS?
 What is SQL?
 What are the different types of SQL commands?
-What is the difference between SQL and MySQL?
-What is a database?
-What is a table?
 What is a primary key?
 What is a foreign key?
-What is a unique key?
+What is the difference between PRIMARY KEY and UNIQUE KEY?
 What is a composite key?
 What is a candidate key?
+What is a super key?
+What are constraints in SQL?
+What is the NOT NULL constraint?
+What is the DEFAULT constraint?
+What is the CHECK constraint?
+What is the AUTO_INCREMENT property?
 What is normalization?
-What are the different normal forms?
+Explain the different normal forms (1NF, 2NF, 3NF).
 What is denormalization?
-What is a JOIN?
-What is the difference between INNER JOIN and LEFT JOIN?
-What is the difference between LEFT JOIN and RIGHT JOIN?
+What is the difference between DELETE, DROP, and TRUNCATE?
+What is the difference between WHERE and HAVING?
+What is an INNER JOIN?
+What is the difference between INNER JOIN and OUTER JOIN?
+Explain LEFT JOIN with an example.
+Explain RIGHT JOIN with an example.
 What is a FULL OUTER JOIN?
 What is a SELF JOIN?
 What is a CROSS JOIN?
-What is GROUP BY?
-What is HAVING?
-What is ORDER BY?
-What is DISTINCT?
-What is the WHERE clause?
-What is the difference between WHERE and HAVING?
-What are aggregate functions?
-What is COUNT()?
-What is SUM()?
-What is AVG()?
-What is MAX() and MIN()?
+What is the difference between UNION and UNION ALL?
+What are aggregate functions in SQL?
+What is the GROUP BY clause?
+What is the ORDER BY clause?
+What is the DISTINCT keyword?
+What is the COUNT() function?
+What is the difference between COUNT(*) and COUNT(column_name)?
+What is the AVG() function?
+What is the SUM() function?
+What is the MAX() function?
+What is the MIN() function?
 What is a subquery?
-What is a correlated subquery?
-What is a view?
-What is an index?
-Why are indexes used?
+What is the difference between a subquery and a JOIN?
+What is a view in SQL?
+What is the difference between a view and a table?
+What is an index? Why is it used?
+What are clustered and non-clustered indexes?
+What are ACID properties in DBMS?
+What is a transaction?
+What is the COMMIT command?
+What is the ROLLBACK command?
+What is the SAVEPOINT command?
+What is the difference between CHAR and VARCHAR?
 What is a stored procedure?
 What is a trigger?
-What is a transaction?
-What are ACID properties?
-What is COMMIT?
-What is ROLLBACK?
-What is SAVEPOINT?
-What is the DELETE command?
-What is the TRUNCATE command?
-What is the DROP command?
-Difference between DELETE, TRUNCATE and DROP?
-What is UNION?
-What is UNION ALL?
-What are window functions?
-Explain the ROW_NUMBER() function.
+What is a Common Table Expression (CTE)?
+What are window functions in SQL?
+What is the ROW_NUMBER() function?
+What is the RANK() function?
+What is the DENSE_RANK() function?
+How can you optimize an SQL query?
+How do you find duplicate records in a table?
+How do you delete duplicate records while keeping one copy?
