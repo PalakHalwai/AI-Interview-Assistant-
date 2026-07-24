@@ -1,50 +1,60 @@
 Tell me about yourself.
 Walk me through your resume.
-Why do you want to work for our company?
 Why should we hire you?
+Why do you want to work for our company?
+What do you know about our company?
+Why did you choose your field of study?
 What are your greatest strengths?
 What is your biggest weakness?
+How do you plan to improve your weaknesses?
 Where do you see yourself in five years?
-Why are you leaving your current job?
-Describe yourself in three words.
-What motivates you to perform well?
-Tell me about a challenge you faced and how you handled it.
-Describe a time when you worked under pressure.
-Tell me about a mistake you made and what you learned.
-Describe a situation where you had to solve a difficult problem.
-Tell me about a time you failed.
-Describe a conflict you had with a teammate.
-How do you handle criticism?
-Tell me about a time you showed leadership.
-Describe a time you had to meet a tight deadline.
-Tell me about a time you helped someone on your team.
-How do you prioritize your work?
-How do you handle multiple tasks at once?
-What would you do if your manager disagreed with your idea?
-How do you deal with difficult coworkers?
-Describe your ideal work environment.
-Are you comfortable working in a team?
-Do you prefer working independently or in a team?
+What motivates you at work?
 What does success mean to you?
-How do you handle stress?
-How do you stay organized?
-Why should we choose you over other candidates?
-What are your salary expectations?
-Are you willing to relocate?
-Are you willing to work overtime if required?
-How quickly can you learn new technologies?
-How do you keep your skills updated?
-Tell me about a project you are proud of.
-Describe a situation where you had to adapt to change.
-What are your hobbies and interests?
-What kind of manager do you like working with?
-How do you handle failure?
+How do you define failure?
 What achievement are you most proud of?
-Describe a time when you took initiative.
-Tell me about a difficult decision you had to make.
-How would your friends describe you?
-How would your previous teacher or manager describe you?
-If you could improve one thing about yourself, what would it be?
-Do you have any questions for us?
+Describe yourself in three words.
 What are your career goals?
-Why should we not hire you?
+Why are you looking for this opportunity?
+What makes you different from other candidates?
+How do you handle constructive criticism?
+What values are most important to you in a workplace?
+Tell me about a time you faced a difficult challenge.
+Describe a situation where you had to work under pressure.
+Tell me about a time you made a mistake.
+Describe a time when you had to learn something quickly.
+Tell me about a time you worked in a team.
+Describe a conflict you had with a teammate and how you resolved it.
+Tell me about a time you demonstrated leadership.
+Describe a situation where you had to solve a difficult problem.
+Tell me about a time you failed to achieve a goal.
+Describe a time you had to meet a tight deadline.
+Tell me about a time you handled multiple tasks at once.
+Describe a situation where you received negative feedback.
+Tell me about a time you disagreed with your manager or team leader.
+Describe a time you helped someone succeed.
+Tell me about a difficult decision you had to make.
+Describe a situation where you had to adapt to change.
+Tell me about a time you went above and beyond your responsibilities.
+Describe a situation where you had to persuade someone.
+Tell me about a time you dealt with an unhappy customer or client.
+Describe a situation where you showed initiative.
+How do you prioritize your work?
+How do you manage your time effectively?
+Do you prefer working independently or in a team? Why?
+How do you handle stress at work?
+How do you stay motivated during repetitive tasks?
+How do you react when you don't know the answer to a question?
+What would you do if your manager disagreed with your idea?
+What would you do if two deadlines conflicted?
+How would you handle an unethical situation at work?
+What would you do if you noticed a teammate wasn't contributing?
+How do you build good relationships with colleagues?
+What kind of work environment helps you perform your best?
+How do you keep your technical skills up to date?
+Are you willing to relocate or travel for work?
+Are you comfortable working overtime when necessary?
+How do you handle unexpected changes in priorities?
+What are your salary expectations?
+Do you have any questions for us?
+Why should we choose you over another candidate?
+Is there anything else you'd like us to know about you?
