@@ -1,50 +1,60 @@
 What is Java?
-What are the features of Java?
-What is the difference between Java and C++?
-What is JVM?
-What is JDK?
-What is JRE?
-What is bytecode?
+What are the main features of Java?
+What is the difference between JDK, JRE, and JVM?
 Why is Java platform independent?
-What is object-oriented programming?
-What is a class?
-What is an object?
+What is bytecode?
+What is the main() method in Java?
+What are variables and data types in Java?
+What is the difference between primitive and non-primitive data types?
+What are operators in Java?
+What is type casting in Java?
+What is Object-Oriented Programming (OOP)?
+What is a class and an object?
+What is a constructor?
+What is the difference between a constructor and a method?
 What is inheritance?
 What is polymorphism?
 What is encapsulation?
 What is abstraction?
-What is an interface?
-What is an abstract class?
-Difference between interface and abstract class?
 What is method overloading?
 What is method overriding?
-What is a constructor?
-What is a default constructor?
-Can constructors be overloaded?
-What is the this keyword?
-What is the super keyword?
-What is static keyword?
-What is final keyword?
-What is the difference between == and equals()?
-What is String?
-What is StringBuilder?
-Difference between String and StringBuilder?
-What is exception handling?
-What is try-catch?
-What is finally block?
-What is throw and throws?
-What is multithreading?
-What is thread synchronization?
-What is garbage collection?
-What is the Collection Framework?
-What is ArrayList?
-What is LinkedList?
-Difference between ArrayList and LinkedList?
-What is HashMap?
-Difference between HashMap and Hashtable?
-What is HashSet?
-What is an Iterator?
-What is serialization?
+What is exception handling in Java?
+What is the difference between checked and unchecked exceptions?
+What is the difference between throw and throws?
+What is the purpose of the finally block?
+What is the String class?
+What is the difference between String, StringBuilder, and StringBuffer?
+Why are String objects immutable?
+What is an array in Java?
+What is the difference between an array and an ArrayList?
+What is the Java Collections Framework?
+What is an ArrayList?
+What is a LinkedList?
+What is a HashMap?
+What is a HashSet?
+What is the difference between HashMap and Hashtable?
+What is an interface?
+What is an abstract class?
+What is the difference between an interface and an abstract class?
+Can a class implement multiple interfaces?
 What are packages in Java?
-What are access modifiers?
-Why is Java widely used in enterprise applications?
+What is multithreading in Java?
+What is the difference between a process and a thread?
+What is synchronization in Java?
+What is a deadlock?
+How does garbage collection work in Java?
+What is the difference between == and equals()?
+Why should hashCode() and equals() be overridden together?
+What is serialization?
+What is deserialization?
+What is the Comparable interface?
+What is the Comparator interface?
+What is the difference between Comparable and Comparator?
+What are lambda expressions in Java?
+What are functional interfaces?
+What are Java Streams?
+What is the Optional class?
+What are Java 8 features?
+What is the Executor Framework
+What is the volatile keyword?
+What are the best practices for writing clean Java code?
