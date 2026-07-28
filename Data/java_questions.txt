@@ -38,7 +38,7 @@ What is an abstract class?
 What is the difference between an interface and an abstract class?
 Can a class implement multiple interfaces?
 What are packages in Java?
-What is multithreading in Java?
+What is multithreading in Java? 
 What is the difference between a process and a thread?
 What is synchronization in Java?
 What is a deadlock?

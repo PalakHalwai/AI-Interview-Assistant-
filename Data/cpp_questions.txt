@@ -1,50 +1,60 @@
-What is C++?
 What is the difference between C and C++?
-What are the features of C++?
-What is object-oriented programming?
+What are the main features of C++?
+What is Object-Oriented Programming (OOP)?
 What is a class?
 What is an object?
-What is encapsulation?
-What is inheritance?
-What is polymorphism?
-What is abstraction?
 What is a constructor?
 What is a destructor?
-What is constructor overloading?
+What is the difference between a constructor and a destructor?
+What is inheritance?
+What is polymorphism?
+What is encapsulation?
+What is abstraction?
 What is function overloading?
 What is function overriding?
-What is a virtual function?
-What is a pure virtual function?
-What is an abstract class?
-What is a friend function?
+What is operator overloading?
 What is the this pointer?
+What is a friend function?
+What is a namespace?
+What is the scope resolution operator (::)?
+What is the difference between struct and class in C++?
 What is a pointer?
+What is the difference between a pointer and a reference?
 What is a null pointer?
 What is a dangling pointer?
 What is a void pointer?
 What is dynamic memory allocation?
-What is the new operator?
-What is the delete operator?
-Difference between stack and heap memory?
-What is a reference variable?
-Difference between pointer and reference?
-What is pass by value?
-What is pass by reference?
-What is the Standard Template Library (STL)?
-What is a vector?
-What is a list in STL?
-What is a map?
-What is a set?
-What is an iterator?
+What is the difference between new/delete and malloc/free?
+What is a copy constructor?
+What is the assignment operator?
+What is the difference between a copy constructor and the assignment operator?
+What is a virtual function?
+What is a pure virtual function?
+What is an abstract class?
+What is runtime polymorphism?
+What is compile-time polymorphism?
+What is the virtual keyword?
 What is exception handling in C++?
-What is try-catch?
-What is namespace?
-What is recursion?
-What is inline function?
-What is a macro?
-Difference between struct and class?
-What is file handling in C++?
-What is multiple inheritance?
-What is operator overloading?
-What is copy constructor?
-Why is C++ widely used in system programming?
+What is the difference between throw, try, and catch?
+What are templates in C++?
+What are function templates and class templates?
+What is the Standard Template Library (STL)?
+What is a vector in C++?
+What is the difference between a vector and an array?
+What is a map in C++?
+What is the difference between map and unordered_map?
+What is a set in C++?
+What is the difference between set and unordered_set?
+What is a queue?
+What is a stack?
+What are iterators in C++?
+What are smart pointers?
+What are unique_ptr, shared_ptr, and weak_ptr?
+What is a memory leak?
+What is RAII (Resource Acquisition Is Initialization)?
+What is a move constructor?
+What is move semantics?
+What is the const keyword?
+What are inline functions?
+How is file handling performed in C++?
+What are some best practices for writing clean and efficient C++ code?
