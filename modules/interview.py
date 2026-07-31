@@ -58,6 +58,39 @@ def calculate_score(questions, answers):
     return final_score
 
 
+def evaluate_answer(question, answer):
+
+    keywords = ANSWER_KEYWORDS.get(question, [])
+
+    answer = answer.lower()
+
+    matches = 0
+
+    for keyword in keywords:
+        if keyword.lower() in answer:
+            matches += 1
+
+    if len(keywords) == 0:
+
+        if len(answer) >= 15:
+            return 6, "Good answer, but this question has no keyword evaluation yet."
+
+        return 3, "Answer is too short."
+
+    score = round((matches / len(keywords)) * 10)
+
+    if score >= 8:
+        feedback = "Excellent answer."
+
+    elif score >= 5:
+        feedback = "Good answer. Try adding a little more detail."
+
+    else:
+        feedback = "Missing important concepts."
+
+    return score, feedback
+
+
 def get_feedback(score):
     if score >= 8:
         return "🌟 Excellent! Your answers were detailed and impressive."
@@ -67,7 +100,7 @@ def get_feedback(score):
         return "📚 Needs improvement. Consider elaborating on your answers."
 
 
-def show_report(interview_title, answers, score):
+def show_report(interview_title, questions, answers, score):
     print("\n" + "=" * 50)
     print(f"          {interview_title} REPORT")
     print("=" * 50)
@@ -81,8 +114,21 @@ def show_report(interview_title, answers, score):
 
     print("\nYour Answers:")
 
-    for number, answer in enumerate(answers, start=1):
-        print(f"{number}. {answer}")
+    for number, (question, answer) in enumerate(zip(questions, answers), start=1):
+
+        question_text = question.split("|")[0]
+
+        question_score, question_feedback = evaluate_answer(question_text, answer)
+
+        print(f"\nQuestion {number}")
+        print(question_text)
+
+        print("Your Answer:")
+        print(answer)
+
+        print(f"Score: {question_score}/10")
+
+        print(f"Feedback: {question_feedback}")
 
     print("\n🎉 Interview Completed!")
 
@@ -120,7 +166,7 @@ def interview(name, filename, interview_title, questions_per_file=None):
 
     score = calculate_score(questions, answers)
 
-    show_report(interview_title, answers, score)
+    show_report(interview_title, questions, answers, score)
 
     interview_type = interview_title.replace(" INTERVIEW", "")
     save_history(name, interview_type, score, len(answers))
