@@ -1,8 +1,6 @@
+from Data.answer_keywords import ANSWER_KEYWORDS
 from modules.history import save_history
 import random
-
-
-
 
 
 def load_questions(files, questions_per_file=None):
@@ -29,20 +27,35 @@ def load_questions(files, questions_per_file=None):
     return all_questions
 
 
-def calculate_score(answers):
+def calculate_score(questions, answers):
 
-    score = 0
+    total_score = 0
 
-    for answer in answers:
-        if len(answer) >= 10:
-            score += 3
+    for question, answer in zip(questions, answers):
+
+        keywords = ANSWER_KEYWORDS.get(question, [])
+
+        answer = answer.lower()
+
+        matches = 0
+
+        for keyword in keywords:
+            if keyword.lower() in answer:
+                matches += 1
+
+        if len(keywords) > 0:
+            question_score = (matches / len(keywords)) * 10
         else:
-            score += 1
+            if len(answer) >= 15:
+                question_score = 6
+            else:
+                question_score = 3
 
-    if score > 10:
-        score = 10
+        total_score += question_score
 
-    return score
+    final_score = round(total_score / len(questions))
+
+    return final_score
 
 
 def get_feedback(score):
@@ -83,28 +96,33 @@ def interview(name, filename, interview_title, questions_per_file=None):
 
     if questions_per_file is None:
         questions = random.sample(questions, min(6, len(questions)))
+
     answers = []
 
     for number, question in enumerate(questions, start=1):
 
-    # If the question contains an answer (like aptitude questions),
-    # display only the question part.
-     if "|" in question:
-        question = question.split("|")[0]
+        display_question = question
 
-    print(f"\nQuestion {number}:")
-    print(question)
+        if "|" in question:
+            display_question = question.split("|")[0]
 
-    while True:
+        print(f"\nQuestion {number}:")
+        print(display_question)
+
+        while True:
             answer = input("Your Answer: ").strip()
+
             if answer == "":
                 print("❌ Answer cannot be empty. Please try again.\n")
             else:
                 answers.append(answer)
                 break
-    score = calculate_score(answers)
+
+    score = calculate_score(questions, answers)
+
     show_report(interview_title, answers, score)
 
     interview_type = interview_title.replace(" INTERVIEW", "")
     save_history(name, interview_type, score, len(answers))
+
     input("\nPress Enter to return to the Main Menu...")
