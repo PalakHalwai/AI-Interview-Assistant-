@@ -1,5 +1,5 @@
-from Data.answer_keywords import ANSWER_KEYWORDS
 from modules.history import save_history
+from ai_evaluator import evaluate_interview
 import random
 
 
@@ -27,113 +27,84 @@ def load_questions(files, questions_per_file=None):
     return all_questions
 
 
-def calculate_score(questions, answers):
-
-    total_score = 0
-
-    for question, answer in zip(questions, answers):
-
-        keywords = ANSWER_KEYWORDS.get(question, [])
-
-        answer = answer.lower()
-
-        matches = 0
-
-        for keyword in keywords:
-            if keyword.lower() in answer:
-                matches += 1
-
-        if len(keywords) > 0:
-            question_score = (matches / len(keywords)) * 10
-        else:
-            if len(answer) >= 15:
-                question_score = 6
-            else:
-                question_score = 3
-
-        total_score += question_score
-
-    final_score = round(total_score / len(questions))
-
-    return final_score
-
-
-def evaluate_answer(question, answer):
-
-    keywords = ANSWER_KEYWORDS.get(question, [])
-
-    answer = answer.lower()
-
-    matches = 0
-
-    for keyword in keywords:
-        if keyword.lower() in answer:
-            matches += 1
-
-    if len(keywords) == 0:
-
-        if len(answer) >= 15:
-            return 6, "Good answer, but this question has no keyword evaluation yet."
-
-        return 3, "Answer is too short."
-
-    score = round((matches / len(keywords)) * 10)
-
-    if score >= 8:
-        feedback = "Excellent answer."
-
-    elif score >= 5:
-        feedback = "Good answer. Try adding a little more detail."
-
-    else:
-        feedback = "Missing important concepts."
-
-    return score, feedback
-
-
 def get_feedback(score):
+
     if score >= 8:
         return "🌟 Excellent! Your answers were detailed and impressive."
+
     elif score >= 5:
         return "👍 Good effort! Try giving more detailed answers."
+
     else:
         return "📚 Needs improvement. Consider elaborating on your answers."
 
 
-def show_report(interview_title, questions, answers, score):
+def show_report(interview_title, questions, answers, ai_results):
+
     print("\n" + "=" * 50)
     print(f"          {interview_title} REPORT")
     print("=" * 50)
 
     print(f"\nQuestions Answered: {len(answers)}")
-    print(f"\nInterview Score: {score}/10")
+
+    # If AI evaluation failed
+    if ai_results is None:
+
+        print("\n⚠️ AI Evaluation Unavailable")
+        print("Your interview answers were collected successfully.")
+        print("Please try the AI evaluation again later.")
+
+        print("\nYour Answers:")
+
+        for number, (question, answer) in enumerate(zip(questions, answers), start=1):
+
+            question_text = question.split("|")[0]
+
+            print(f"\nQuestion {number}")
+            print(question_text)
+
+            print("\nYour Answer:")
+            print(answer)
+
+        print("\n🎉 Interview Completed!")
+
+        return None
+
+    # Calculate overall score
+    scores = [result["score"] for result in ai_results]
+
+    overall_score = round(sum(scores) / len(scores), 1)
+
+    print(f"\nInterview Score: {overall_score}/10")
 
     print("\nFeedback:")
-    feedback = get_feedback(score)
-    print(feedback)
+    print(get_feedback(overall_score))
 
     print("\nYour Answers:")
 
-    for number, (question, answer) in enumerate(zip(questions, answers), start=1):
+    for number, (question, answer, result) in enumerate(
+        zip(questions, answers, ai_results), start=1
+    ):
 
         question_text = question.split("|")[0]
-
-        question_score, question_feedback = evaluate_answer(question_text, answer)
 
         print(f"\nQuestion {number}")
         print(question_text)
 
-        print("Your Answer:")
+        print("\nYour Answer:")
         print(answer)
 
-        print(f"Score: {question_score}/10")
-
-        print(f"Feedback: {question_feedback}")
+        print("\nAI Evaluation:")
+        print(f"Score: {result['score']}/10")
+        print(f"Feedback: {result['feedback']}")
 
     print("\n🎉 Interview Completed!")
 
+    return overall_score
+
 
 def interview(name, filename, interview_title, questions_per_file=None):
+
     print("\n" + "=" * 50)
     print(f"          {interview_title}")
     print("=" * 50)
@@ -144,6 +115,10 @@ def interview(name, filename, interview_title, questions_per_file=None):
         questions = random.sample(questions, min(6, len(questions)))
 
     answers = []
+
+    # -----------------------------
+    # COLLECT ALL ANSWERS FIRST
+    # -----------------------------
 
     for number, question in enumerate(questions, start=1):
 
@@ -156,19 +131,49 @@ def interview(name, filename, interview_title, questions_per_file=None):
         print(display_question)
 
         while True:
+
             answer = input("Your Answer: ").strip()
 
             if answer == "":
                 print("❌ Answer cannot be empty. Please try again.\n")
+
             else:
                 answers.append(answer)
                 break
 
-    score = calculate_score(questions, answers)
+    # -----------------------------
+    # ONE AI REQUEST
+    # -----------------------------
 
-    show_report(interview_title, questions, answers, score)
+    print("\n🤖 Evaluating your complete interview...")
+    print("Please wait...\n")
+
+    clean_questions = []
+
+    for question in questions:
+
+        if "|" in question:
+            clean_questions.append(question.split("|")[0])
+
+        else:
+            clean_questions.append(question)
+
+    ai_results = evaluate_interview(clean_questions, answers)
+
+    # -----------------------------
+    # SHOW REPORT
+    # -----------------------------
+
+    overall_score = show_report(interview_title, clean_questions, answers, ai_results)
+
+    # -----------------------------
+    # SAVE HISTORY
+    # -----------------------------
 
     interview_type = interview_title.replace(" INTERVIEW", "")
-    save_history(name, interview_type, score, len(answers))
+
+    if overall_score is not None:
+
+        save_history(name, interview_type, overall_score, len(answers))
 
     input("\nPress Enter to return to the Main Menu...")
