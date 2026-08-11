@@ -17,7 +17,7 @@ def save_history(name, interview_type, score, total_questions):
     "time": current_time
 }
 
-    filename = "history/interview_history.json"
+    filename = "History/interview_history.json"
 
     if os.path.exists(filename):
 

@@ -4,7 +4,7 @@ import os
 
 def show_history():
 
-    filename = "history/interview_history.json"
+    filename = "History/interview_history.json"
 
     if not os.path.exists(filename):
         print("\nNo performance history found.")
