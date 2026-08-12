@@ -3,6 +3,8 @@ import modules.aptitude
 import modules.performance
 import modules.resume
 import modules.mock_interview
+import modules.setting
+
 
 def welcome():
     print("=" * 50)
@@ -49,21 +51,35 @@ while True:
         )
 
     elif choice == "3":
-        modules.interview.interview(name, "Data/cpp_questions.txt", "C/C++ INTERVIEW")
+        modules.interview.interview(name, "Data/cpp_questions.txt", "C/C++ INTERVIEW",modules.setting.get_question_count()
+        )
 
     elif choice == "4":
-        modules.interview.interview(name, "Data/java_questions.txt", "JAVA INTERVIEW")
+        modules.interview.interview(
+            name,
+            "Data/java_questions.txt",
+            "JAVA INTERVIEW",
+            modules.setting.get_question_count(),
+        )
     elif choice == "5":
-        modules.interview.interview(name, "Data/sql_questions.txt", "SQL INTERVIEW")
+        modules.interview.interview(
+            name,
+            "Data/sql_questions.txt",
+            "SQL INTERVIEW",
+            modules.setting.get_question_count(),
+        )
 
     elif choice == "6":
-         modules.aptitude.aptitude_test(name)
+        modules.aptitude.aptitude_test(name)
 
     elif choice == "7":
-         modules.resume.analyze_resume()
+        modules.resume.analyze_resume()
 
     elif choice == "8":
-         modules.mock_interview.start_mock_interview(name)
+        modules.mock_interview.start_mock_interview(name)
+
+    elif choice == "10":
+        modules.setting.settings_menu()
 
     elif choice == "0":
         print("\nThank you for using AI Interview Assistant.")

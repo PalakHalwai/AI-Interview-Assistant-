@@ -1,5 +1,6 @@
 from modules.history import save_history
 from ai_evaluator import evaluate_interview
+import modules.setting
 import random
 
 
@@ -112,7 +113,9 @@ def interview(name, filename, interview_title, questions_per_file=None):
     questions = load_questions(filename, questions_per_file)
 
     if questions_per_file is None:
-        questions = random.sample(questions, min(6, len(questions)))
+        questions = random.sample(
+            questions, min(modules.setting.question_count, len(questions))
+        )
 
     answers = []
 
